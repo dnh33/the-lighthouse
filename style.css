@@ -1,0 +1,415 @@
+/* CSS Document */
+
+/* General CSS rules for all documents */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+#wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+body {
+  background-color: #030305;
+}
+/* Header for Grid pages */
+nav ul {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  max-width: 100%;
+  height: 86px;
+  background-color: #201f24;
+  border-radius: 0px 0px 30px 30px;
+  -moz-border-radius: 0px 0px 30px 30px;
+  -webkit-border-radius: 0px 0px 30px 30px;
+}
+nav ul li:nth-child(3) {
+  max-width: 74px;
+  max-height: 74px;
+}
+.shadow:hover {
+  filter: drop-shadow(1px 1px 1px white);
+}
+.brightness:hover {
+  filter: brightness(150%);
+}
+nav li {
+  list-style: none;
+  flex: 1;
+}
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #999999;
+  font-family: "1820 modern";
+}
+nav a:hover {
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
+    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+/* Footer for Grid Pages */
+footer {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  background-color: black;
+  margin-top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 120px;
+  width: 100%;
+  background-image: url("images/lt_footer.png");
+  opacity: 0.7;
+  border: 3px groove #201f24;
+  border-radius: 30px 30px 0px 0px;
+  -moz-border-radius: 30px 30px 0px 0px;
+  -webkit-border-radius: 30px 30px 0px 0px;
+}
+footer > a {
+  grid-area: 2/2/2/3;
+  text-align: center;
+}
+footer img {
+  opacity: 0.5;
+  max-width: 77px;
+  max-height: 34px;
+}
+footer img:hover {
+  opacity: 1;
+}
+.video-container {
+  /* Responsive Youtube Embeds */
+  position: relative;
+  padding-bottom: 56.25%; /* - for 16:9 video*/
+  /*padding-bottom: 75%;*/ /* - for 4:3 video*/
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* End of General CSS */
+
+/* Index.html CSS */
+/* ID's */
+#index {
+  background-image: url("images/index.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+/* --- */
+/* Element Selectors */
+section ul {
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-top: 37.33vw;
+  max-width: 48%;
+  height: 86px;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  /* background-color: rgba(87, 87, 87, 0.1); */
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+}
+/* section ul li:nth-child(4) {
+    margin-right: 5em;
+  } */
+section ul li:nth-child(3) {
+  max-width: 74px;
+  max-height: 74px;
+}
+section li {
+  list-style: none;
+  flex: 1;
+}
+section a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-family: "1820 modern";
+}
+section a:hover {
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a,
+    0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222,
+    0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a,
+    0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+/* ----------------- */
+/* Classes */
+.button:hover {
+  background-color: rgba(107, 107, 107, 0.8);
+}
+.button-2:hover {
+  background-color: rgba(107, 107, 107, 0.8);
+}
+.button {
+  background-color: rgba(107, 107, 107, 0.5);
+  border: none;
+  color: #2d2d2d;
+  padding: 8px 57px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Fira Sans Condensed";
+  right: 27.6vw;
+  top: 29.2vw;
+  position: absolute;
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+}
+.button-2 {
+  background-color: rgba(107, 107, 107, 0.5);
+  border: none;
+  color: #2d2d2d;
+  padding: 8px 54px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Fira Sans Condensed";
+  right: 27.6vw;
+  top: 26.2vw;
+  position: absolute;
+  border: 2px solid rgb(197, 197, 197);
+  border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+}
+.footernav {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  background-color: black;
+  left: 0;
+  right: 0;
+  max-height: 120px;
+  width: 100%;
+  background-image: url("images/lt_footer.png");
+  opacity: 0.7;
+  border-bottom: 2px groove #201f24;
+  border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  -webkit-border-radius: 0px 0px 0px 0px;
+}
+.footernav > a {
+  grid-area: 2/2/2/3;
+  text-align: center;
+}
+.footernav img {
+  opacity: 0.5;
+  max-width: 77px;
+  max-height: 34px;
+}
+.footernav img:hover {
+  opacity: 1;
+}
+.shadow:hover {
+  filter: drop-shadow(1px 1px 1px white);
+}
+.brightness:hover {
+  filter: brightness(150%);
+}
+
+/* ------- */
+
+/* Videos.html CSS */
+/* ID's */
+/* --- */
+/* Element Selectors */
+/* ----------------- */
+/* Classes */
+.videos {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.div1 {
+  grid-area: 7 / 2 / 9 / 5;
+}
+.div2 {
+  grid-area: 7 / 6 / 9 / 9;
+}
+.div3 {
+  grid-area: 7/ 10 / 9 / 13;
+}
+.div4 {
+  grid-area: 2 / 4 / 8 / 11;
+}
+/* ------- */
+
+/* Gallery.html CSS */
+/* ID's */
+/* --- */
+/* Element Selectors */
+/* ----------------- */
+/* Classes */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
+  /* grid-template-rows: repeat(3, 10vw); */
+  grid-gap: 23px;
+  margin: 5rem 8rem 4.2vw 8rem;
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 1px solid blueviolet; */
+}
+/* ------- */
+
+/* Story.html CSS */
+/* ID's */
+
+/* --- */
+/* Element Selectors */
+h1 {
+  color: white;
+  margin: 5rem 8rem 2rem 4em;
+  font-size: 25px;
+  line-height: 1.5em;
+  font-family: "oswald";
+}
+caption {
+  color: white;
+  text-align: left;
+  padding: 0.5em;
+  margin-bottom: 2rem;
+  background-color: #201f24;
+}
+table {
+  margin-right: 21.4rem;
+  font-family: "oswald";
+  margin-bottom: 2em;
+}
+td,
+tr {
+  color: white;
+  padding-left: 0.5em;
+}
+th {
+  text-align: left;
+  padding-left: 0.5em;
+}
+/* ----------------- */
+/* Classes */
+.flex {
+  display: flex;
+}
+.left {
+  flex: 2;
+}
+.right {
+  flex: 1;
+}
+.lt-photo {
+  max-width: 450px;
+  max-height: 450px;
+  margin-top: 5rem;
+}
+.para {
+  color: white;
+  padding: 0.5em;
+  margin-left: 4.5em;
+  margin-right: 7em;
+  line-height: 1.33em;
+  font-family: "oswald";
+  font-size: 20px;
+  background-color: rgba(32, 31, 36, 0.2);
+  text-align: justify;
+}
+.listen-now {
+  font-size: 15px;
+  color: white;
+  font-family: "oswald";
+  margin-top: 1em;
+  background-color: #201f24;
+  padding: 0.5em;
+  text-align: left;
+  max-width: 63.6%;
+}
+/* ------- */
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+  }
+  .left {
+    display: none;
+  }
+  .div1,
+  .div2,
+  .div3 {
+    grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  }
+  .button{
+      display: none;
+  }
+  .button-2{
+      display: none;
+  }
+  section ul li:nth-child(3) {
+    display: none;
+  }
+  section a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #b3b3b3;
+    font-family: "1820 modern";
+    padding: 0.33%;
+    margin: 0.33%;
+    background-color: tomato;
+  }
+  section ul{
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 1680px) {
+    .button{
+        display: none;
+    }
+    .button-2{
+        display: none;
+    }
+    #index {
+        background-image: url("images/index.png");
+        background-position: center;
+        background-repeat: no-repeat center;
+        background-size: 100% 100%;
+        overflow: hidden;
+      }
+    section a{
+        background-color: rgba(87, 87, 87, 0);
+    }
+}
+
