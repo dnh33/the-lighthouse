@@ -1,59 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Open+Sans:400,700|Oswald&display=swap" rel="stylesheet"> 
-    <link href="//db.onlinewebfonts.com/c/e69e984c7db16e7d895e2b3571fce5e0?family=1820+Modern" rel="stylesheet" type="text/css"/> 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Open+Sans:400,700|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/e69e984c7db16e7d895e2b3571fce5e0?family=1820+Modern"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>The Lighthouse Unofficial Site</title>
-</head>
-<body>
+    <style>
+      .small-video-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 10;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+      }
+
+      .small-video-overlay:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .small-video-overlay i {
+        font-size: 40px;
+        color: white;
+        opacity: 0.8;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+      }
+
+      .small-video-overlay:hover i {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      .video-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 6px;
+      }
+
+      .video-container iframe {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
     <div id="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="index.html"><img src="images/tower.png" alt="tower icon" class="brightness shadow"></a></li>
-                    <li><a href="story.html">STORY</a></li>
-                    <li><a href="https://shop.a24films.com/" target="_blank">STORE</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="videos">
-            <div class="div1">
-                <div class="video-container">
-                    <iframe width="295" height="320" src="https://www.youtube.com/embed/otR6OhHQP5o" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="images/tower.png"
+                  alt="tower icon"
+                  class="brightness shadow"
+              /></a>
+            </li>
+            <li><a href="story.html">STORY</a></li>
+            <li>
+              <a href="https://shop.a24films.com/" target="_blank">STORE</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="videos">
+        <div class="div1">
+          <div class="video-container small-video">
+            <iframe
+              width="295"
+              height="320"
+              src="https://www.youtube.com/embed/SBPeB6lL2Fk"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="small-video-overlay">
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
             </div>
+          </div>
+        </div>
 
-            <div class="div2">
-                <div class="video-container">
-                    <iframe width="295" height="320" src="https://www.youtube.com/embed/F-Dusv4FHFU " frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="div2">
+          <div class="video-container small-video">
+            <iframe
+              width="295"
+              height="320"
+              src="https://www.youtube.com/embed/IYbXJjm1bIw"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="small-video-overlay">
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
             </div>
+          </div>
+        </div>
 
-            <div class="div3">
-                <div class="video-container">
-                    <iframe width="295" height="320" src="https://www.youtube.com/embed/faX4_h_laT8" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <div class="div3">
+          <div class="video-container small-video">
+            <iframe
+              width="295"
+              height="320"
+              src="https://www.youtube.com/embed/o87HYkTiUR4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="small-video-overlay">
+              <i class="fa fa-play-circle-o" aria-hidden="true"></i>
             </div>
+          </div>
+        </div>
 
-            <div class="div4">
-                <div class="video-container">
-                    <iframe width="690" height="432" src="https://www.youtube.com/embed/5qqLG-AjOTo" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div> 
-        <footer>
-            <a href="https://a24films.com/" target="_blank" class="btm"><img src="images/a24_logo_hvid.png" alt="a24 logo"></a>
-        </footer>
-    </div> <!--End of Wrapper 1280px-->
-</body>
+        <div class="div4">
+          <div class="video-container main-video">
+            <iframe
+              width="690"
+              height="432"
+              src="https://www.youtube.com/embed/Hyag7lR8CPA"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="https://a24films.com/" target="_blank" class="btm"
+          ><img src="images/a24_logo_hvid.png" alt="a24 logo"
+        /></a>
+      </footer>
+    </div>
+    <!--End of Wrapper 1280px-->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all small video overlays and main video iframe
+        const smallVideoOverlays = document.querySelectorAll(
+          ".small-video-overlay"
+        );
+        const mainVideoIframe = document.querySelector(".main-video iframe");
+
+        // Add click event listener to each small video overlay
+        smallVideoOverlays.forEach((overlay) => {
+          overlay.addEventListener("click", function () {
+            // Get the iframe inside the parent container of this overlay
+            const smallIframe = this.parentElement.querySelector("iframe");
+
+            // Get the video source URL from the small iframe
+            const smallVideoSrc = smallIframe.getAttribute("src");
+
+            // Get the current main video source
+            const mainVideoSrc = mainVideoIframe.getAttribute("src");
+
+            // Swap the video sources
+            mainVideoIframe.setAttribute("src", smallVideoSrc);
+            smallIframe.setAttribute("src", mainVideoSrc);
+
+            // Scroll to main video for better UX
+            document
+              .querySelector(".div4")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

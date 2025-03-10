@@ -1,69 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link href="style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Open+Sans:400,700|Oswald&display=swap" rel="stylesheet"> 
-    <link href="//db.onlinewebfonts.com/c/e69e984c7db16e7d895e2b3571fce5e0?family=1820+Modern" rel="stylesheet" type="text/css"/> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Open+Sans:400,700|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/e69e984c7db16e7d895e2b3571fce5e0?family=1820+Modern"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>The Lighthouse Unofficial Site</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="videos.html">VIDEOS</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="index.html"><img src="images/tower.png" alt="tower icon" class="brightness shadow"></a></li>
-                    <li><a href="story.html">STORY</a></li>
-                    <li><a href="https://shop.a24films.com/" target="_blank">STORE</a></li>
-                </ul>
-            </nav>
-        </header>
-    
-        <div class="gallery">
-            <figure class="gallery__item gallery__item-1">
-                <img src="images/image-1.jpg" class="gallery__img" alt="Image 1">
-              </figure>
-              <figure class="gallery__item gallery__item-2">
-                <img src="images/image-2.jpg" class="gallery__img" alt="Image 2">
-              </figure>
-              <figure class="gallery__item gallery__item-3">
-                <img src="images/image-3.jpg" class="gallery__img" alt="Image 3">
-              </figure>
-              <figure class="gallery__item gallery__item-4">
-                <img src="images/image-4.jpg" class="gallery__img" alt="Image 4">
-              </figure>
-              <figure class="gallery__item gallery__item-5">
-                <img src="images/image-5.jpg" class="gallery__img" alt="Image 5">
-              </figure>
-              <figure class="gallery__item gallery__item-6">
-                <img src="images/image-6.jpg" class="gallery__img" alt="Image 6">
-              </figure>
-              <figure class="gallery__item gallery__item-6">
-                <img src="images/image-7.jpg" class="gallery__img" alt="Image 6">
-              </figure>
-              <figure class="gallery__item gallery__item-6">
-                <img src="images/image-8.jpg" class="gallery__img" alt="Image 6">
-              </figure>
-              <figure class="gallery__item gallery__item-6">
-                <img src="images/image-9.jpg" class="gallery__img" alt="Image 6">
-              </figure>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="videos.html">VIDEOS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  src="images/tower.png"
+                  alt="tower icon"
+                  class="brightness shadow"
+              /></a>
+            </li>
+            <li><a href="story.html">STORY</a></li>
+            <li>
+              <a href="https://shop.a24films.com/" target="_blank">STORE</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item-1">
+          <a href="#modal-1">
+            <img src="images/image-1.jpg" class="gallery__img" alt="Image 1" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-2">
+          <a href="#modal-2">
+            <img src="images/image-2.jpg" class="gallery__img" alt="Image 2" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-3">
+          <a href="#modal-3">
+            <img src="images/image-3.jpg" class="gallery__img" alt="Image 3" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-4">
+          <a href="#modal-4">
+            <img src="images/image-4.jpg" class="gallery__img" alt="Image 4" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-5">
+          <a href="#modal-5">
+            <img src="images/image-5.jpg" class="gallery__img" alt="Image 5" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-6">
+          <a href="#modal-6">
+            <img src="images/image-6.jpg" class="gallery__img" alt="Image 6" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-7">
+          <a href="#modal-7">
+            <img src="images/image-7.jpg" class="gallery__img" alt="Image 7" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-8">
+          <a href="#modal-8">
+            <img src="images/image-8.jpg" class="gallery__img" alt="Image 8" />
+          </a>
+        </figure>
+        <figure class="gallery__item gallery__item-9">
+          <a href="#modal-9">
+            <img src="images/image-9.jpg" class="gallery__img" alt="Image 9" />
+          </a>
+        </figure>
+      </div>
+
+      <!-- Modal Gallery -->
+      <div class="modal-gallery">
+        <!-- Modal 1 -->
+        <div id="modal-1" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-1.jpg" alt="Image 1" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-9" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-2" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
         </div>
-        
-        <footer>
-            <a href="https://a24films.com/" target="_blank" class="btm"><img src="images/a24_logo_hvid.png" alt="a24 logo"></a>
-        </footer>
-        
-    </div> <!--End of Wrapper 1280px-->
 
-</body>
+        <!-- Modal 2 -->
+        <div id="modal-2" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-2.jpg" alt="Image 2" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-1" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-3" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 3 -->
+        <div id="modal-3" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-3.jpg" alt="Image 3" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-2" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-4" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 4 -->
+        <div id="modal-4" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-4.jpg" alt="Image 4" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-3" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-5" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 5 -->
+        <div id="modal-5" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-5.jpg" alt="Image 5" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-4" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-6" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 6 -->
+        <div id="modal-6" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-6.jpg" alt="Image 6" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-5" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-7" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 7 -->
+        <div id="modal-7" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-7.jpg" alt="Image 7" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-6" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-8" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 8 -->
+        <div id="modal-8" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-8.jpg" alt="Image 8" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-7" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-9" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 9 -->
+        <div id="modal-9" class="modal">
+          <div class="modal-content">
+            <a href="#" class="modal-close">&times;</a>
+            <img src="images/image-9.jpg" alt="Image 9" class="modal-img" />
+            <div class="modal-navigation">
+              <a href="#modal-8" class="nav-button prev"
+                ><i class="fa fa-angle-left"></i
+              ></a>
+              <a href="#modal-1" class="nav-button next"
+                ><i class="fa fa-angle-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <a href="https://a24films.com/" target="_blank" class="btm"
+          ><img src="images/a24_logo_hvid.png" alt="a24 logo"
+        /></a>
+      </footer>
+    </div>
+    <!--End of Wrapper 1280px-->
+  </body>
 </html>
-
